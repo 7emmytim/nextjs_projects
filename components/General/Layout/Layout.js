@@ -6,15 +6,15 @@ import { MoonIcon, SunIcon } from '@heroicons/react/solid'
 
 const Layout = ({ children, removeBackground }) => {
 
-    const { theme, setTheme } = useTheme()
-    const [isMounted, setIsMounted] = useState(false)
+    const { theme, setTheme } = useTheme();
+    const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
-        setIsMounted(true)
+        setIsMounted(true);
     }, [])
 
     const switchTheme = () => {
-        isMounted && setTheme(theme === "light" ? "dark" : "light")
+        isMounted && setTheme(theme === 'light' ? 'dark' : 'light');
     }
 
     return (
